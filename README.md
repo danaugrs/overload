@@ -1,4 +1,4 @@
-# overload
+# overload [![Documentation](https://docs.rs/overload/badge.svg)](https://docs.rs/overload) [![Latest Version](https://img.shields.io/crates/v/overload.svg)](https://crates.io/crates/overload)
 
 Provides a macro to simplify operator overloading.
 

@@ -1,8 +1,10 @@
-# overload [![Documentation](https://docs.rs/overload/badge.svg)](https://docs.rs/overload) [![Latest Version](https://img.shields.io/crates/v/overload.svg)](https://crates.io/crates/overload)
+<p align="center"><img width="460" src="https://github.com/danaugrs/overload/blob/master/logo.png"></p>
+<p align="center">
+  <a href="https://docs.rs/overload"><img src="https://docs.rs/overload/badge.svg"/></a>
+  <a href="https://crates.io/crates/overload"><img src="https://img.shields.io/crates/v/overload.svg"/></a>
+</p>
 
-Provides a macro to simplify operator overloading.
-
-See the [documentation](https://docs.rs/overload/) for details.
+Provides a macro to simplify operator overloading. See the [documentation](https://docs.rs/overload/) for details and supported operators.
 
 ## Example
 

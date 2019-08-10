@@ -17,5 +17,5 @@ fn neg() {
 overload!(! (a: A) -> B { B(!a.0) });
 #[test]
 fn not() {
-    assert_eq!(!A(3), B(!4));
+    assert_eq!(!A(3), B(!3));
 }

@@ -1,6 +1,6 @@
 [package]
 name = "overload"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Daniel Salvadori <danaugrs@gmail.com>"]
 description = "Provides a macro to simplify operator overloading."
 license = "MIT"

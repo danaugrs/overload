@@ -152,16 +152,16 @@
 //! 
 //! | Operator | Example                                                         | Trait  |
 //! |----------|-----------------------------------------------------------------|--------|
-//! | +        | `overload!((a: A) + (b: B) -> C { /*...*/ );`                   | Add    |           
-//! | -        | `overload!((a: A) - (b: B) -> C { /*...*/ );`                   | Sub    |
-//! | *        | `overload!((a: A) * (b: B) -> C { /*...*/ );`                   | Mul    |
-//! | /        | `overload!((a: A) / (b: B) -> C { /*...*/ );`                   | Div    |
-//! | %        | `overload!((a: A) % (b: B) -> C { /*...*/ );`                   | Rem    |
-//! | &        | `overload!((a: A) & (b: B) -> C { /*...*/ );`                   | BitAnd |
-//! | \|       | <code>overload!((a: A) &vert; (b: B) -> C { /\*...*\/ );</code> | BitOr  |
-//! | ^        | `overload!((a: A) ^ (b: B) -> C { /*...*/ );`                   | BitXor |
-//! | <<       | `overload!((a: A) << (b: B) -> C { /*...*/ );`                  | Shl    |
-//! | >>       | `overload!((a: A) >> (b: B) -> C { /*...*/ );`                  | Shr    |
+//! | +        | `overload!((a: A) + (b: B) -> C { /*...*/ });`                   | Add    |           
+//! | -        | `overload!((a: A) - (b: B) -> C { /*...*/ });`                   | Sub    |
+//! | *        | `overload!((a: A) * (b: B) -> C { /*...*/ });`                   | Mul    |
+//! | /        | `overload!((a: A) / (b: B) -> C { /*...*/ });`                   | Div    |
+//! | %        | `overload!((a: A) % (b: B) -> C { /*...*/ });`                   | Rem    |
+//! | &        | `overload!((a: A) & (b: B) -> C { /*...*/ });`                   | BitAnd |
+//! | \|       | <code>overload!((a: A) &vert; (b: B) -> C { /\*...*\/ });</code> | BitOr  |
+//! | ^        | `overload!((a: A) ^ (b: B) -> C { /*...*/ });`                   | BitXor |
+//! | <<       | `overload!((a: A) << (b: B) -> C { /*...*/ });`                  | Shl    |
+//! | >>       | `overload!((a: A) >> (b: B) -> C { /*...*/ });`                  | Shr    |
 //! 
 //! # Assignment operators
 //! 
@@ -173,16 +173,16 @@
 //! 
 //! | Operator | Example                                                          | Trait        |
 //! |----------|------------------------------------------------------------------|--------------|
-//! | +=       | `overload!((a: &mut A) += (b: B) { /*...*/ );`                   | AddAssign    |           
-//! | -=       | `overload!((a: &mut A) -= (b: B) { /*...*/ );`                   | SubAssign    |
-//! | *=       | `overload!((a: &mut A) *= (b: B) { /*...*/ );`                   | MulAssign    |
-//! | /=       | `overload!((a: &mut A) /= (b: B) { /*...*/ );`                   | DivAssign    |
-//! | %=       | `overload!((a: &mut A) %= (b: B) { /*...*/ );`                   | RemAssign    |
-//! | &=       | `overload!((a: &mut A) &= (b: B) { /*...*/ );`                   | BitAndAssign |
-//! | \|=      | <code>overload!((a: &mut A) &vert;= (b: B) { /\*...*\/ );</code> | BitOrAssign  |
-//! | ^=       | `overload!((a: &mut A) ^= (b: B) { /*...*/ );`                   | BitXorAssign |
-//! | <<=      | `overload!((a: &mut A) <<= (b: B) { /*...*/ );`                  | ShlAssign    |
-//! | >>=      | `overload!((a: &mut A) >>= (b: B) { /*...*/ );`                  | ShrAssign    |
+//! | +=       | `overload!((a: &mut A) += (b: B) { /*...*/ });`                   | AddAssign    |           
+//! | -=       | `overload!((a: &mut A) -= (b: B) { /*...*/ });`                   | SubAssign    |
+//! | *=       | `overload!((a: &mut A) *= (b: B) { /*...*/ });`                   | MulAssign    |
+//! | /=       | `overload!((a: &mut A) /= (b: B) { /*...*/ });`                   | DivAssign    |
+//! | %=       | `overload!((a: &mut A) %= (b: B) { /*...*/ });`                   | RemAssign    |
+//! | &=       | `overload!((a: &mut A) &= (b: B) { /*...*/ });`                   | BitAndAssign |
+//! | \|=      | <code>overload!((a: &mut A) &vert;= (b: B) { /\*...*\/ });</code> | BitOrAssign  |
+//! | ^=       | `overload!((a: &mut A) ^= (b: B) { /*...*/ });`                   | BitXorAssign |
+//! | <<=      | `overload!((a: &mut A) <<= (b: B) { /*...*/ });`                  | ShlAssign    |
+//! | >>=      | `overload!((a: &mut A) >>= (b: B) { /*...*/ });`                  | ShrAssign    |
 //! 
 //! # Unary operators
 //! 
@@ -196,8 +196,8 @@
 //! 
 //! | Operator | Example                                                 | Trait |
 //! |----------|---------------------------------------------------------|-------|
-//! | -        | `overload!(- (a: A) -> B { /*...*/ );`                  | Neg   |
-//! | !        | `overload!(! (a: A) -> B { /*...*/ );`                  | Not   |  
+//! | -        | `overload!(- (a: A) -> B { /*...*/ });`                  | Neg   |
+//! | !        | `overload!(! (a: A) -> B { /*...*/ });`                  | Not   |  
 //! 
 //! # Notes
 //! 

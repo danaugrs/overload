@@ -16,12 +16,12 @@ macro_rules! _overload_assignment {
 #[doc(hidden)]
 #[macro_export(local_inner_macros)]
 macro_rules! _overload_assignment_internal {
-    ($op_trait:ident, $op_fn:ident, $li:ident, $lt:ty, $ri:ident, $rt:ty, $body:block) => (        
-        impl ops::$op_trait<$rt> for $lt {
+    ($op_trait:ident, $op_fn:ident, $li:ident, $lt:ty, $ri:ident, $rt:ty, $body:block) => {
+        impl std::ops::$op_trait<$rt> for $lt {
             fn $op_fn(&mut self, $ri: $rt) {
                 let $li = self;
                 $body
             }
         }
-    );
+    };
 }

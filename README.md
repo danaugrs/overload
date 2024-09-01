@@ -11,7 +11,6 @@ Provides a macro to simplify operator overloading. See the [documentation](https
 ```rust
 extern crate overload;
 use overload::overload;
-use std::ops; // <- don't forget this or you'll get nasty errors
 
 #[derive(PartialEq, Debug)]
 struct Val {

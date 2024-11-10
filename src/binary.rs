@@ -17,7 +17,7 @@ macro_rules! _overload_binary {
 #[macro_export(local_inner_macros)]
 macro_rules! _overload_binary_internal {
     ($op_trait:ident, $op_fn:ident, $li:ident, $lt:ty, $ri:ident, $rt:ty, $out:ty, $body:block) => (
-        impl ops::$op_trait<$rt> for $lt {
+        impl std::ops::$op_trait<$rt> for $lt {
             type Output = $out;
             fn $op_fn(self, $ri: $rt) -> Self::Output {
                 let $li = self;

@@ -1,6 +1,5 @@
 extern crate overload;
 use overload::overload;
-use std::ops;
 
 #[derive(PartialEq, Debug)]
 struct A(i32);

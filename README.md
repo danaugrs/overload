@@ -11,7 +11,6 @@ Provides a macro to simplify operator overloading. See the [documentation](https
 ```rust
 extern crate overload;
 use overload::overload;
-use std::ops; // <- don't forget this or you'll get nasty errors
 
 #[derive(PartialEq, Debug)]
 struct Val {
@@ -24,28 +23,28 @@ overload!((a: ?Val) + (b: ?Val) -> Val { Val { v: a.v + b.v } });
 The macro call in the snippet above generates the following code:
 
 ```rust
-impl ops::Add<Val> for Val {
+impl std::ops::Add<Val> for Val {
     type Output = Val;
     fn add(self, b: Val) -> Self::Output {
         let a = self;
         Val { v: a.v + b.v }
     }
 }
-impl ops::Add<&Val> for Val {
+impl std::ops::Add<&Val> for Val {
     type Output = Val;
     fn add(self, b: &Val) -> Self::Output {
         let a = self;
         Val { v: a.v + b.v }
     }
 }
-impl ops::Add<Val> for &Val {
+impl std::ops::Add<Val> for &Val {
     type Output = Val;
     fn add(self, b: Val) -> Self::Output {
         let a = self;
         Val { v: a.v + b.v }
     }
 }
-impl ops::Add<&Val> for &Val {
+impl std::ops::Add<&Val> for &Val {
     type Output = Val;
     fn add(self, b: &Val) -> Self::Output {
         let a = self;

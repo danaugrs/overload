@@ -4,7 +4,6 @@
 //! ```
 //! extern crate overload;
 //! use overload::overload;
-//! use std::ops; // <- don't forget this or you'll get nasty errors
 //! ```
 //! 
 //! # Introduction
@@ -20,7 +19,6 @@
 //! ```
 //! # extern crate overload;
 //! # use overload::overload;
-//! # use std::ops;
 //! # #[derive(PartialEq, Debug)]
 //! # struct Val {
 //! #   v: i32
@@ -41,7 +39,6 @@
 //! ```
 //! # extern crate overload;
 //! # use overload::overload;
-//! # use std::ops;
 //! # #[derive(PartialEq, Debug)]
 //! # struct Val {
 //! #   v: i32
@@ -56,7 +53,6 @@
 //! ```
 //! # extern crate overload;
 //! # use overload::overload;
-//! # use std::ops;
 //! # #[derive(PartialEq, Debug)]
 //! # struct Val {
 //! #   v: i32
@@ -67,7 +63,6 @@
 //! ```
 //! # extern crate overload;
 //! # use overload::overload;
-//! # use std::ops;
 //! # #[derive(PartialEq, Debug)]
 //! # struct Val {
 //! #   v: i32
@@ -83,7 +78,6 @@
 //! ```
 //! # extern crate overload;
 //! # use overload::overload;
-//! # use std::ops;
 //! # #[derive(PartialEq, Debug)]
 //! # struct Val {
 //! #   v: i32
@@ -128,7 +122,6 @@
 //! ```
 //! # extern crate overload;
 //! # use overload::overload;
-//! # use std::ops;
 //! # #[derive(PartialEq, Debug)]
 //! # struct Val {
 //! #   v: i32
@@ -150,8 +143,8 @@
 //! 
 //! The last line of the body needs to be an expression (i.e. no `;` at the end of the line) of type `<out_type>`.
 //! 
-//! | Operator | Example                                                         | Trait  |
-//! |----------|-----------------------------------------------------------------|--------|
+//! | Operator | Example                                                          | Trait  |
+//! |----------|------------------------------------------------------------------|--------|
 //! | +        | `overload!((a: A) + (b: B) -> C { /*...*/ });`                   | Add    |           
 //! | -        | `overload!((a: A) - (b: B) -> C { /*...*/ });`                   | Sub    |
 //! | *        | `overload!((a: A) * (b: B) -> C { /*...*/ });`                   | Mul    |
